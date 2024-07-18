@@ -644,10 +644,6 @@ hr {
     color: #000;
 }
 
-.container-codice #code-link {
-    text-decoration: none;
-}
-
 .container-codice .git-hub {
     position: relative;
     width: 30px;
