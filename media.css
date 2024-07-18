@@ -1,0 +1,230 @@
+/* ---------------------------------------- MEDIA QUERY --------------------------------------- */
+@media (max-width: 850px) {
+
+    /* NAVBAR */
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 100;
+        background-color: var(--color5);
+        transition: right .5s;
+    }
+
+    .menu li {
+        margin-top: 40px;
+    }
+
+    .menu li a {
+        padding: 10px;
+    }
+
+    #open-menu,
+    #close-menu {
+        display: block;
+    }
+
+    #check:checked~.menu {
+        right: 0;
+    }
+
+    /* MENU */
+    .corpo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-avatar {
+        margin-top: -400px;
+        margin-left: -25px;
+    }
+
+    .dati h1 {
+        margin-top: 30%;
+    }
+
+    .arrow-down {
+        display: none;
+    }
+
+    .work {
+        display: none;
+    }
+
+    /* INFO */
+
+    #info {
+        height: 200vh;
+    }
+
+    .container-info {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .container-left {
+        width: 600px;
+        padding: 11.5%;
+    }
+
+    .container-right {
+        margin-left: 0;
+        margin-top: 40px;
+        width: 600px;
+        padding: 11%;
+    }
+
+
+
+    #portfolio {
+        height: 160vh;
+
+    }
+
+    .container-portfolio {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .container-titolo {
+        width: 700px;
+        margin-bottom: 40px;
+    }
+
+    .container-img {
+        width: 400px;
+
+    }
+
+    #prev {
+        left: -120px;
+    }
+
+    #next {
+        right: -120px;
+    }
+
+
+    /* CONTACT */
+    .titolo h3 {
+        margin-top: 45px;
+
+        font-size: 17px;
+    }
+
+    .titolo h3 span {
+        font-size: 17px;
+    }
+
+    #nm,
+    #email,
+    #text,
+    #btn-invia {
+        width: 400px;
+    }
+
+    /* ARROW-UP */
+    .back-to-home {
+        width: 28px;
+        height: 28px;
+        bottom: 16px;
+        right: 6px;
+        padding: 2px;
+        font-size: 1.5rem;
+    }
+
+    /* FOOTER */
+    .container-footer {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .footer-section {
+        border-right: none;
+        border-bottom: 1px solid #555;
+        padding-bottom: 20px;
+    }
+
+    .footer-section:last-child {
+        border-bottom: none;
+    }
+
+    .footer-section:first-child {
+        border-left: none;
+    }
+}
+
+@media (max-width: 430px) {
+    .dati h1 span {
+        display: block;
+    }
+
+    .dati h3 span::after {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+
+    #nm,
+    #email,
+    #text,
+    #btn-invia {
+        width: 300px;
+    }
+
+    /* .container-img {
+        width: 100px;
+    } */
+
+}
+
+/* ------------------------------------- ANIMAZIONI ----------------------------------------  */
+/* AVATAR */
+@keyframes heartbeat {
+    from {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+.heartbeat {
+    animation: heartbeat 1.5s ease-in-out infinite both;
+}
+
+/* ----------------------------------------- SCROLLBAR ------------------------------------------- */
+/* Stile per l'intero scrollbar */
+::-webkit-scrollbar {
+    width: 14px;
+    height: 8px;
+}
+
+/* Stile per il thumb (la parte che si muove) */
+::-webkit-scrollbar-thumb {
+    background-color: var(--color3);
+    border-radius: 2px;
+}
+
+/* Stile per il track (la traccia in cui il thumb si muove) */
+::-webkit-scrollbar-track {
+    background-color: rgba(144, 143, 143, 0.435);
+    border-radius: 2px;
+}
+
+
+@media (max-width: 800px) {}
