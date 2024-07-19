@@ -1,19 +1,12 @@
 /* ---------------------------------------- MEDIA QUERY --------------------------------------- */
 /* x schermi più grandi ??? */
-@media screen and (min-width:1380px ) {
-    #home {
-        /* background-color: #ccc; */
-        font-size: 2.8vw;
-    }
-}
-
 
 /* TABLET */
 @media screen and (max-width: 850px) {
 
-    body {
+    /* body {
         font-size: 3vw;
-    }
+    } */
 
     /* NAVBAR */
     .menu {
@@ -60,6 +53,7 @@
     }
 
     .dati h1 {
+        /* font-size: 3vw; */
         margin-top: 20%;
     }
 
@@ -178,9 +172,9 @@
 /* DI MEZZO */
 @media (min-width: 501px) and (max-width: 730px) {
 
-    body {
+    /* body {
         font-size: 3vw;
-    }
+    } */
 
     /* INFO */
     #info {
@@ -213,14 +207,14 @@
 
 /* TELEFONO */
 @media (max-width: 500px) {
-    body {
+    /* body {
         font-size: 3.2vw;
-    }
+    } */
 
     /* HOME */
     .corpo {
         /* height: 100vh; */
-        padding: 250px 0;
+        padding: 300px 0;
         flex-direction: column;
         align-items: center;
     }
@@ -247,8 +241,8 @@
     }
 
     .dati a {
-        margin-left: -40px;
-        padding-right: 40px;
+        margin-left: -46px;
+        padding-right: 50px;
     }
 
     /* INFO */
