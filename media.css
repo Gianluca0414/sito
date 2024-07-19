@@ -4,23 +4,21 @@
 /* TABLET */
 @media screen and (max-width: 850px) {
 
-    /* body {
-        font-size: 3vw;
-    } */
-
     /* NAVBAR */
     .menu {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        width: 80%;
+        width: 85%;
         height: 100vh;
         position: fixed;
         top: 0;
         right: -100%;
         z-index: 100;
-        background-color: var(--color5);
+        background-color: #1a1a896b;
+        backdrop-filter: blur(14px);
         transition: right .5s;
+
     }
 
     .menu li {
@@ -193,12 +191,6 @@
         padding: 9%;
     }
 
-    #corso {
-        position: absolute;
-        bottom: -10px;
-    }
-
-
     /* PORTFOLIO */
     .container-titolo {
         width: 450px;
@@ -220,7 +212,7 @@
     }
 
     .dati {
-        font-size: 12px;
+        font-size: 14px;
         /* padding-top: 100px; */
         padding-top: 50px;
     }
@@ -234,15 +226,15 @@
     }
 
     .container-avatar {
-        margin-top: -330px;
+        margin-top: -320px;
         margin-left: 10px;
         width: 140px;
         height: 140px;
     }
 
     .dati a {
-        margin-left: -46px;
-        padding-right: 50px;
+        margin-left: -30px;
+        padding-right: 40px;
     }
 
     /* INFO */
@@ -274,12 +266,6 @@
 
     .container-button button {
         width: 220px;
-    }
-
-    /* exp */
-    #corso {
-        position: absolute;
-        bottom: -10px;
     }
 
     /* skills */

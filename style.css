@@ -8,8 +8,9 @@
     /* transition: 0.5s; */
 }
 
-
 body {
+    
+
     background-attachment: fixed;
     font-family: 'poppins', sans-serif;
     --color1: #fff;
@@ -402,23 +403,15 @@ header::after {
     gap: 15px;
     position: relative;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
 }
 
 .year {
-    position: absolute;
-    top: 10px;
-    width: 100%;
-    text-align: center;
     color: var(--color3);
-}
-
-.title {
-    position: absolute;
-    bottom: 11px;
-    transform: translateY(-50%);
-    width: 100%;
-    text-align: center;
-    font-size: 15px;
 }
 
 .curriculum-button-container {
@@ -695,7 +688,7 @@ hr {
     height: 490px;
     display: flex;
     align-items: center;
-    justify-content:center;
+    justify-content: center;
     flex-direction: column;
     padding: 6%;
     margin-left: 50px;
@@ -714,7 +707,7 @@ hr {
     flex-direction: column;
     overflow: hidden;
     cursor: pointer;
-    
+
 }
 
 .container-img img {
@@ -769,7 +762,8 @@ hr {
     width: 398px;
 }
 
-.container-arrow #next, #prev {
+.container-arrow #next,
+#prev {
     width: 30px;
     height: 30px;
     border-radius: 2px;
@@ -780,7 +774,8 @@ hr {
     text-align: center;
 }
 
-#next:hover, #prev:hover {
+#next:hover,
+#prev:hover {
     background-color: var(--color3);
     transition: 0.3s ease-in-out
 }
