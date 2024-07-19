@@ -123,7 +123,7 @@
                         </div>
                         <div class="right-box">
                             <h4 class="year">2024</h4>
-                            <h4 class="title" id="corso" >Corso CEFI Web-Developer</h4>
+                            <h4 class="title" id="corso">Corso CEFI Web-Developer</h4>
                         </div>
                     </div>
                     <div class="curriculum-button-container">
@@ -266,7 +266,6 @@
                 </div>
             </div>
             <div class="container-lavoro">
-                <div id="prev" class="arrow left-arrow"><i class="ri-arrow-left-double-line"></i></div>
                 <div class="container-img">
                     <img id="project-img" src="images/application-form-employment-document-concept.jpg" alt="Image 1"
                         class="active">
@@ -276,7 +275,14 @@
                         </div>
                     </a>
                 </div>
-                <div id="next" class="arrow right-arrow"><i class="ri-arrow-right-double-line"></i></div>
+                <div class="container-arrow">
+                    <div id="prev" class="arrow left-arrow">
+                        <i class="ri-arrow-left-double-line"></i>
+                    </div>
+                    <div id="next" class="arrow right-arrow">
+                        <i class="ri-arrow-right-double-line"></i>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -365,4 +371,5 @@
 <script>
     jQuery('#waterdrop').raindrops({ color: '#0d0d3f', canvasHeight: 30, density: 1, frequency: 6 });
 </script>
+
 </html>

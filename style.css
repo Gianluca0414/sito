@@ -178,10 +178,9 @@ header::after {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
     text-align: justify;
-    /* text-justify: auto; */
-    /* text-align: center; */
+    height: 100%;
+    padding: 210px 0;
 }
 
 .dati {
@@ -291,7 +290,9 @@ header::after {
     align-items: center;
     color: var(--color1);
     background-color: var(--color2);
-    height: 100vh;
+    /* height: 100vh; */
+    height: 100%;
+    padding: 80px 0;
 }
 
 .container-info {
@@ -554,10 +555,12 @@ header::after {
 /* ----------------------------- SECTION PORTFOLIO ---------------------------- */
 #portfolio {
     color: var(--color1);
-    height: 100vh;
+    /* height: 100vh; */
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100%;
+    padding: 60px 0;
 }
 
 .container-portfolio {
@@ -688,14 +691,14 @@ hr {
 
 .container-lavoro {
     position: relative;
-    width: 50%;
-    height: 500px;
+    width: 35%;
+    height: 490px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content:center;
     flex-direction: column;
-    text-align: center;
-    padding: 4%;
+    padding: 6%;
+    margin-left: 50px;
 }
 
 .container-img {
@@ -711,6 +714,7 @@ hr {
     flex-direction: column;
     overflow: hidden;
     cursor: pointer;
+    
 }
 
 .container-img img {
@@ -758,7 +762,34 @@ hr {
     opacity: 1;
 }
 
-.arrow {
+.container-arrow {
+    padding-top: 15px;
+    display: flex;
+    gap: 20px;
+    width: 398px;
+}
+
+.container-arrow #next, #prev {
+    width: 30px;
+    height: 30px;
+    border-radius: 2px;
+    cursor: pointer;
+    background-color: var(--color1);
+    font-size: 25px;
+    padding: 2px;
+    text-align: center;
+}
+
+#next:hover, #prev:hover {
+    background-color: var(--color3);
+    transition: 0.3s ease-in-out
+}
+
+.container-arrow i {
+    color: #000;
+}
+
+/* .arrow {
     font-size: 24px;
     cursor: pointer;
     user-select: none;
@@ -766,24 +797,17 @@ hr {
     color: #000;
     background-color: var(--color1);
     border-radius: 3px;
-}
+} */
 
-.left-arrow {
-    left: 40px;
-    top: 50%;
-}
-
-.right-arrow {
-    right: 40px;
-    top: 50%;
-}
 
 /* --------------------------------------  SECTION CONTATTI ----------------------------------------- */
 #contatti {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    /* height: 100vh; */
+    height: 100%;
+    padding: 70px 0;
     background-color: var(--color2);
 }
 
@@ -795,8 +819,7 @@ hr {
 }
 
 .titolo h3 {
-    margin-top: 20px;
-    margin-bottom: 10px;
+    padding-bottom: 10px;
     color: var(--color1);
 }
 
