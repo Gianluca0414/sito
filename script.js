@@ -91,7 +91,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg",
                 "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg"
             ],
-            projectLink: "#",
+            projectLink: "#home",
             codeLink: "#info",
             img: "images/60031.jpg"
         },
