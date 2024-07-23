@@ -46,8 +46,13 @@
     }
 
     .container-avatar {
-        margin-top: -410px;
-        margin-left: -25px;
+        margin-top: -400px;
+        margin-left: -5px;
+    }
+
+    .dati {
+        padding-top: 0px;
+
     }
 
     .dati h1 {
@@ -233,8 +238,8 @@
     }
 
     .dati a {
-        margin-left: -30px;
-        padding-right: 40px;
+        margin-left: -32px;
+        padding-right: 30px;
     }
 
     /* INFO */
@@ -305,6 +310,10 @@
         border-bottom: 1px dashed #44444474;
     }
 
+    #dom1 {
+        padding-bottom: 5px;
+    }
+
     .column {
         gap: 10px;
     }
@@ -371,6 +380,24 @@
     animation: heartbeat 1.5s ease-in-out infinite both;
 }
 
+/* ARROW DOWN */
+@keyframes scroll-dowm {
+    0% {
+        transform: translateY(-1rem);
+        opacity: 0;
+    }
+
+    50% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(.6rem);
+        opacity: 0;
+    }
+}
+
 /* ----------------------------------------- SCROLLBAR ------------------------------------------- */
 /* Stile per l'intero scrollbar */
 ::-webkit-scrollbar {
@@ -389,6 +416,3 @@
     background-color: rgba(144, 143, 143, 0.435);
     border-radius: 2px;
 }
-
-
-@media (max-width: 800px) {}
