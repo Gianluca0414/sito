@@ -54,10 +54,10 @@
         <!-- SECTION HOME -->
         <section id="home" class="section">
             <div class="container-corpo">
-                <div class="corpo">
+                <div class="corpo scroll-scale">
                     <div class="dati">
-                        <h1>Ciao, mi chiamo <span>Gianluca Valenzi</span></h1>
-                        <h3>Sono un <span>Web Developer</span> in cerca di lavoro</h3>
+                        <h1>Ciao! Mi chiamo <span id="name">Gianluca&nbsp;Valenzi</span></h1>
+                        <h3>Sono un <span> Web Developer</span> in cerca di lavoro</h3>
                         <!-- <a href="https://www.linkedin.com/feed/" target="_blank"> -->
                         <a href="https://github.com/Gianluca0414/sitoATTESTATO Gianluca Valenzi-Corso Javascript e JQuery .pdf"
                             target="_blank">
@@ -68,12 +68,15 @@
                             <i id="git-hub" class="devicon-github-original"></i>
                         </a>
                     </div>
-                    <div class="container-avatar heartbeat">
+
+                    <div class="container-avatar heartbeat scroll-scale">
                         <img id="myavatar" src="images/avatar-blu.png" alt="avatar">
+                        <!-- <img id="myavatar" src="images/Gianluca.jpg" alt="avatar"> -->
+                        <!-- <img id="myavatar" src="images/felpa-bianca.png" alt="avatar"> -->
                     </div>
                 </div>
 
-                <a href="#info" class="piede">
+                <a href="#info" class="piede scroll-scale">
                     <div class="arrow-down">
                         <i class="ri-arrow-down-fill"></i>
                     </div>
@@ -86,7 +89,7 @@
     </main>
 
     <!-- SECTION INFO -->
-    <section id="info" class="section">
+    <section id="info" class="section scroll-scale">
         <div class="container-info">
             <div class="container-left">
                 <div class="corpo-info">
@@ -129,8 +132,8 @@
                         </div>
                     </div>
                     <div class="curriculum-button-container">
-                        <a href="Nuova cartella (7)/index.html"
-                            target="_blank"><button id="download-cv" class="download-button"> DOWNLOAD CV</button></a>
+                        <a href="Nuova cartella (7)/index.html" target="_blank"><button id="download-cv"
+                                class="download-button"> DOWNLOAD CV</button></a>
                     </div>
                 </div>
 
@@ -183,9 +186,9 @@
                             </div>
                             <div class="sub-box" id="sub-ph">
                                 <!-- <a href=""> -->
-                                    <img
-                                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/photoshop/photoshop-original.svg" />
-                                    <span>PHOTOSHOP</span>
+                                <img
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/photoshop/photoshop-original.svg" />
+                                <span>PHOTOSHOP</span>
                                 <!-- </a> -->
                             </div>
                             <div class="sub-box" id="sub-wp">
@@ -197,9 +200,9 @@
                             </div>
                             <div class="sub-box" id="sub-sic">
                                 <!-- <a href="#"> -->
-                                    <img
-                                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" />
-                                    <span>MYSQL</span>
+                                <img
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" />
+                                <span>MYSQL</span>
                                 <!-- </a> -->
                             </div>
                         </div>
@@ -221,12 +224,13 @@
                                 <span class="dom" id="dom1">Lingua: <span class="risp">Italiano</span></span>
                             </div>
                             <div class="column">
-                                <span class="dom">Freelance: <a id="free-a" href="#footer"><span id="free-s"
+                                <span class="dom">Freelance: <a href="#footer"><span id="free-s"
                                             class="risp">Disponibile</span></span></a>
                                 <span class="dom">Città: <span class="risp">Roma, Italia</span></span>
-                                <span class="dom">Numero: <span class="risp">3333333333</span></span>
-                                <span class="dom">Email: <span class="risp"> gianlucavalenziweb
-                                        <br>@gmail.com</span></span>
+                                <span class="dom">Titolo di studio: <span class="risp">Diploma</span></span>
+                                <span class="dom">Email: <a href="#contatti"><span id="email-s" class="risp">
+                                            gianlucavalenziweb
+                                            <br>@gmail.com</span></span></a>
                             </div>
                         </div>
                     </div>
@@ -235,14 +239,13 @@
     </section>
 
     <!-- SECTION PORTFOLIO -->
-    <section id="portfolio" class="section">
+    <section id="portfolio" class="section scroll-scale">
         <div class="container-portfolio">
             <div class="container-titolo">
                 <h3 id="number">01</h3>
                 <h3 id="portfolio-title">Progetto FORM</h3>
-                <p id="portfolio-description">Piccolo progetto di un form di contatto che ha lo scopo
-                    di far vedere delle mie piccole skills: Grafica, controlli di sicurezza e gestione del database.
-                </p>
+                <p id="portfolio-description">Piccolo progetto di un form di contatto, con lo scopo di far vedere delle
+                    mie piccole skills: Grafica, controlli di sicurezza e gestione del database.</p>
                 <p id="cod">Linguaggi utilizzati:</p>
                 <div class="sub-box-portfolio">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
@@ -256,11 +259,12 @@
                 <hr>
                 <div class="container-codice">
                     <div class="download">
-                        <a id="code-link" href="form-ajax/registra.html" target="_blank"><i class="ri-arrow-right-up-line"></i></a>
+                        <a id="code-link" href="http://localhost/form-ajax/login.html" target="_blank"><i
+                                class="ri-arrow-right-up-line"></i></a>
                         <div class="hover-text">Vedi progetto</div>
                     </div>
                     <div class="git-hub">
-                        <a id="project-link" href="https://github.com/" target="_blank"><i id="git-hub"
+                        <a id="project-link" href="progetto in arrivo" target="_blank"><i id="git-hub"
                                 class="devicon-github-original"></i></a>
                         <div class="hover-text">Vedi codice</div>
                     </div>
@@ -268,9 +272,10 @@
             </div>
             <div class="container-lavoro">
                 <div class="container-img">
-                    <img id="project-img" src="images/application-form-employment-document-concept.jpg" alt="Image 1"
+                    <img id="project-img" src="images/60031.jpg" alt="Image 1"
                         class="active">
-                    <a href="form-ajax/registra.html" target="_blank">
+                    <!-- <a id="download-link" href="form-ajax/registra.html" target="_blank"> -->
+                    <a id="download-link" href="progettoinarrivo" target="_blank">
                         <div class="overlay">
                             <span>Scarica il file</span>
                         </div>
@@ -288,12 +293,14 @@
         </div>
     </section>
 
+
+
     <!-- SECTION CONTATTI -->
     <section id="contatti" class="section">
-        <form class="form-contatti" autocomplete="off" onsubmit="event.preventDefault(); SendEmail();">
-            <div class="titolo">
-                <h3>Se sei interessato al mio profilo non aspettare, <span>contattami</span> !!!</h3>
-            </div>
+        <div class="titolo">
+            <h3>Se sei interessato al mio profilo non aspettare, <span>contattami</span> !!!</h3>
+        </div>
+        <form class="form-contatti scroll-bottom" autocomplete="off" onsubmit="event.preventDefault(); SendEmail();">
             <div class="input-box">
                 <i class="ri-user-3-line"></i>
                 <input type="text" id="nm" class="focus" placeholder="Nome" name="name" required>
@@ -327,7 +334,7 @@
     <!-- FOOTER -->
     <section id="footer">
         <div id="waterdrop"></div>
-        <footer class="container-footer">
+        <footer class="container-footer scroll-scale">
             <div class="footer-section">
                 <ul>
                     <h3>Links</h3>
@@ -356,12 +363,12 @@
                 </div>
             </div>
         </footer>
-        <div class="footer-bottom">
+        <div class="footer-bottom scroll-scale">
             <p>&copy; 2024 Gianluca Valenzi. All Rights Reserved.</p>
         </div>
     </section>
 
-    <a href="#home" class="arrow-up"><i class="ri-arrow-up-line"></i></a>
+    <a href="#home" class="arrow-up scroll-top"><i class="ri-arrow-up-line"></i></a>
 </body>
 
 <!-- JS -->

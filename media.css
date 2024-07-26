@@ -217,6 +217,7 @@
     }
 
     .dati {
+
         font-size: 14px;
         /* padding-top: 100px; */
         padding-top: 50px;
@@ -398,21 +399,65 @@
     }
 }
 
+@keyframes drop {
+
+    0%,
+    80%,
+    100% {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+
+    10%,
+    70% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
 /* ----------------------------------------- SCROLLBAR ------------------------------------------- */
 /* Stile per l'intero scrollbar */
 ::-webkit-scrollbar {
-    width: 14px;
-    height: 8px;
+    width: 12px;
+    height: 6px;
 }
 
 /* Stile per il thumb (la parte che si muove) */
 ::-webkit-scrollbar-thumb {
     background-color: var(--color3);
-    border-radius: 2px;
+    border-radius: 4px;
 }
 
 /* Stile per il track (la traccia in cui il thumb si muove) */
 ::-webkit-scrollbar-track {
     background-color: rgba(144, 143, 143, 0.435);
-    border-radius: 2px;
+    border-radius: 4px;
+}
+
+
+
+
+/*  */
+.scroll-scale {
+    opacity: 0;
+    transform: scale(.9);
+    transition: all 2s;
+}
+
+.scroll-bottom {
+    opacity: 0;
+    transform: translateY(300px);
+    transition: 3s;
+}
+
+.scroll-top {
+    opacity: 0;
+    transform: translateY(-300px);
+    transition: 3s;
+}
+
+.show-items {
+    opacity: 1;
+    transform: translateX(0);
 }

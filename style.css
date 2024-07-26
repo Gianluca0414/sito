@@ -9,13 +9,15 @@
 }
 
 body {
-    
+
 
     background-attachment: fixed;
     font-family: 'poppins', sans-serif;
     --color1: #fff;
     --color2: #111154;
     --color3: #3897fd;
+    /* --color3: #4a5158; */
+
     --color4: #0d0d3f;
     --color5: #1a1a89;
     background: var(--color4);
@@ -23,8 +25,12 @@ body {
     /* --color1: #fff;
     --color4: #322CF0;
     --color2: #1A36F0;
-    --color3: #2185EF;
-    --color5: #623AEF;   */
+    /* --color5: #623AEF;    */
+    --color3: #72b6ff;
+    /* --color3: #5eebf0; */
+
+    scroll-behavior: smooth;
+    cursor: s-resi;
 
 }
 
@@ -169,8 +175,12 @@ header::after {
 /* ------------------------------------ HOME ------------------------------ */
 #home {
     background-color: var(--color4);
+    /* background-image: linear-gradient(160deg, #0b0354 0%, #092d70 100%); */
+    /* background-color: var(--color4); */
+    /* background-image: url(images/vintage-wallpaper.webp);
+    border-bottom: 1px solid #ffffff58; */
     /* background-image: url(images/abstract-1779632_1280.jpg);
-     background-size: cover; */
+     background-size: cover; 
     /* background: url(images/northern-lights-3273425_1920.jpg);
     background-size: cover; */
 }
@@ -196,6 +206,18 @@ header::after {
 .dati h1 span {
     color: var(--color3);
     font-size: 30px;
+}
+
+#name {
+    display: inline-block;
+    position: relative;
+}
+
+.letter {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(-100px);
+    animation: drop 8s infinite;
 }
 
 .dati h3 span {
@@ -236,6 +258,8 @@ header::after {
     margin-left: 60px;
     background-color: #fffffff3;
     /* background-color: #ffffffd1; */
+    background-color: #348cebe6;
+    /* background-color: #3897fdfb; */
     max-width: 100%;
 }
 
@@ -283,6 +307,7 @@ header::after {
 
 /* ------------------------------------- SECTION-INFO ----------------------------------- */
 #info {
+    /* background-image: url(images/vintage-wallpaper.webp); */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -365,6 +390,7 @@ header::after {
     text-align: center;
     padding: 7%;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+
     /* border-left: 1px solid #4847475f; */
 }
 
@@ -543,12 +569,15 @@ header::after {
     font-size: 17px;
 }
 
+#email-s:hover,
 #free-s:hover {
     color: var(--color3);
+    transition: color .2s;
 }
 
 /* ----------------------------- SECTION PORTFOLIO ---------------------------- */
 #portfolio {
+    /* background-image: url(images/vintage-wallpaper.webp); */
     color: var(--color1);
     /* height: 100vh; */
     display: flex;
@@ -785,8 +814,14 @@ hr {
     color: #000;
 }
 
+.overlay span:hover {
+    color: var(--color3);
+    transition: color .2s;
+}
+
 /* --------------------------------------  SECTION CONTATTI ----------------------------------------- */
 #contatti {
+    /* background-image: url(images/vintage-wallpaper.webp); */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -794,13 +829,11 @@ hr {
     height: 100%;
     padding: 70px 0;
     background-color: var(--color2);
-}
-
-.form-contatti {
     display: flex;
     flex-direction: column;
     text-align: center;
     align-items: center;
+
 }
 
 .titolo h3 {
@@ -963,6 +996,7 @@ hr {
 
 
 .container-footer {
+    /* background-image: url(images/vintage-wallpaper.webp); */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
