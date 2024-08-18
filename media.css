@@ -461,3 +461,21 @@
     opacity: 1;
     transform: translateX(0);
 }
+
+/* ------------------------------- STAMPA ------------------------ */
+@media print {
+    body {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+
+    /* Nascondi elementi non necessari durante la stampa */
+    .no-print {
+        display: none;
+    }
+
+    @page {
+        margin: 1cm;
+    }
+
+}

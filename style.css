@@ -5,8 +5,10 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    /* transition: 0.5s; */
+    /* letter-spacing: 0.5px; */
+
 }
+
 
 body {
 
@@ -15,7 +17,7 @@ body {
     font-family: 'poppins', sans-serif;
     --color1: #fff;
     --color2: #111154;
-    --color3: #3897fd;
+    /* --color3: #3897fd; */
     /* --color3: #4a5158; */
 
     --color4: #0d0d3f;
@@ -30,7 +32,6 @@ body {
     /* --color3: #5eebf0; */
 
     scroll-behavior: smooth;
-    cursor: s-resi;
 
 }
 
@@ -256,9 +257,10 @@ header::after {
     overflow: hidden;
     box-shadow: 0px 0px 12px 0.5px var(--color3);
     margin-left: 60px;
-    background-color: #fffffff3;
+    background: linear-gradient(19deg, #fffeff 0%, #72b6ff 100%);
+    /* background-color: #fffffff3; */
     /* background-color: #ffffffd1; */
-    background-color: #348cebe6;
+    /* background-color: #348cebe6; */
     /* background-color: #3897fdfb; */
     max-width: 100%;
 }
@@ -340,6 +342,7 @@ header::after {
 .corpo-info h3 {
     font-size: 28px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    margin-top: -10px;
 }
 
 .corpo-info span {
@@ -349,8 +352,9 @@ header::after {
 .corpo-info p {
     padding: 20px 0 40px 0;
     text-align: justify;
+    text-justify: inter-word;
     font-weight: normal;
-    line-height: 1.3;
+    hyphens: auto;
 }
 
 .container-button {
@@ -371,6 +375,7 @@ header::after {
     margin-bottom: 20px;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    font-weight: bolder;
 }
 
 .container-button button:hover {
@@ -396,18 +401,18 @@ header::after {
 
 /* ----------------------------------------- exp ----------------------------------- */
 #container-1 h3 {
-    margin-top: -5px;
+    margin-top: -25px;
     color: var(--color3);
     font-size: 28px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
 
 .p-exp {
-    padding: 15px 0 30px 0;
+    padding: 20px 0 40px 0;
     text-align: justify;
+    text-justify: inter-word;
     font-weight: normal;
-    line-height: 1.3;
-    word-spacing: -1px;
+    hyphens: auto;
 }
 
 .container-exp {
@@ -457,6 +462,7 @@ header::after {
     cursor: pointer;
     transition: background-color 0.3s ease;
     width: 100%;
+    font-weight: bolder;
 }
 
 .download-button:hover {
@@ -467,16 +473,16 @@ header::after {
 #container-2 h3 {
     color: var(--color3);
     font-size: 28px;
-    margin-top: -px;
+    margin-top: -5px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
 
 .p-skills {
     padding: 15px 0 30px 0;
     text-align: justify;
+    text-justify: inter-word;
     font-weight: normal;
-    line-height: 1.3;
-    word-spacing: -1.9px;
+    hyphens: auto;
 }
 
 .container-skills .skills {
@@ -531,12 +537,15 @@ header::after {
     color: var(--color3);
     font-size: 28px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    /* margin-top: -25px; */
 }
 
 .p-about {
-    padding: 30px 0 40px 0;
+    padding: 20px 0 30px 0;
     text-align: justify;
+    text-justify: inter-word;
     font-weight: normal;
+    hyphens: auto;
 }
 
 .about {
@@ -616,9 +625,9 @@ header::after {
 
 .container-titolo p {
     text-align: justify;
+    text-justify: inter-word;
     font-weight: normal;
-    line-height: 1.3;
-    word-spacing: -1px;
+    hyphens: auto;
 }
 
 .container-titolo #cod {
@@ -654,6 +663,7 @@ hr {
     display: flex;
     justify-content: start;
     gap: 20px;
+
 }
 
 .container-codice .download {
@@ -663,6 +673,9 @@ hr {
     cursor: pointer;
     background-color: var(--color1);
     font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     position: relative;
 }
@@ -800,7 +813,7 @@ hr {
     cursor: pointer;
     background-color: var(--color1);
     font-size: 25px;
-    padding: 2px;
+    padding: 1px;
     text-align: center;
 }
 
